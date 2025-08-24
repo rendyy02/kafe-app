@@ -7,12 +7,12 @@
   {{-- Hero Section --}}
   <section id="home" class="relative h-screen bg-cover bg-center" 
            style="background-image: url('{{ asset('images/bg_home.jpg') }}');">
-    <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center">
-      <h1 class="text-3xl md:text-5xl font-bold text-yellow-400" data-aos="fade-up">
+    <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white" data-aos="fade-up">
         "Kami tidak menjanjikan sempurna, tapi selalu hangat"
       </h1>
       <a href="#booking" 
-         class="mt-8 bg-white text-gray-800 px-6 py-3 rounded-full shadow-md hover:bg-gray-200 transition"
+         class="mt-8 bg-[#BFA17E] hover:[background-color:#9C7B5E] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full shadow-md transition"
          data-aos="zoom-in" data-aos-delay="300">
         Booking Tempat?
       </a>
@@ -20,10 +20,10 @@
   </section>
 
   {{-- Produk Unggulan --}}
-  <section id="produk" class="py-16 bg-gray-200 text-center">
+  <section id="produk" class="py-16 bg-gray-200 text-center px-4 sm:px-6 md:px-24">
     <h2 class="text-3xl font-semibold mb-10" data-aos="fade-up">Produk Unggulan</h2>
     
-    <div class="flex flex-col md:flex-row justify-center gap-12">
+    <div class="flex flex-col sm:flex-row justify-center gap-12">
       <div data-aos="fade-up" data-aos-delay="100">
         <img src="{{ asset('images/americano.png') }}" alt="Americano" 
              class="w-40 h-40 object-cover rounded-full mx-auto">
@@ -44,21 +44,21 @@
 
   {{-- Booking Button + Maskot --}}
   <section>
-    <div id="booking" class="mt-10 flex items-center gap-4 justify-center">
+    <div id="booking" class="mt-10 flex flex-col sm:flex-row items-center gap-4 justify-center px-4 sm:px-0">
       <a href="#kontak" 
-         class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-md transition"
+         class="inline-block bg-[#BFA17E] hover:[background-color:#9C7B5E] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-md transition"
          data-aos="fade-right">
         Lihat daftar booking
       </a>
-      <img src="{{ asset('images/maskot.png') }}" alt="maskot" class="w-100 h-auto" data-aos="fade-left">
+      <img src="{{ asset('images/maskot.png') }}" alt="maskot" class="w-full sm:w-auto h-auto max-w-xs sm:max-w-none" data-aos="fade-left">
     </div>
   </section>
 
   {{-- Tentang Kami --}}
-  <section id="tentang" class="py-16 px-6 md:px-24 flex flex-col md:flex-row items-center gap-8 bg-gray-100">
-    <img src="{{ asset('images/maskot2.png') }}" alt="Mascot" class="w-40 md:w-56" data-aos="zoom-in">
+  <section id="tentang" class="py-16 px-4 sm:px-12 md:px-24 flex flex-col md:flex-row items-center gap-8 bg-gray-100">
+    <img src="{{ asset('images/maskot2.png') }}" alt="Mascot" class="w-40 sm:w-48 md:w-56" data-aos="zoom-in">
     
-    <div class="bg-yellow-600 text-white p-6 rounded-lg shadow-md md:flex-1" data-aos="fade-left">
+    <div class="bg-[#BFA17E] hover:[background-color:#9C7B5E] text-white p-6 sm:p-8 rounded-lg shadow-md md:flex-1 transition" data-aos="fade-left">
       <h2 class="text-2xl font-bold mb-4">Tentang Kami</h2>
       <p>
         Kami adalah rumah bagi para pecinta kopi yang mengutamakan kualitas dan ketulusan. 
@@ -69,8 +69,8 @@
   </section>
 
   {{-- Kontak & Footer --}}
-  <footer id="kontak" class="bg-yellow-600 text-white py-12">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+  <footer id="kontak" class="bg-[#BFA17E] hover:[background-color:#9C7B5E] text-white py-12 transition">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-6 md:px-6">
 
       <!-- Kontak -->
       <div class="text-center md:text-left" data-aos="fade-up" data-aos-delay="100">

@@ -27,12 +27,12 @@
                 <span class="text-xl font-semibold">Coffee Shop</span>
             </div>
 
-            <!-- Menu -->
+            <!-- Menu Desktop -->
             <ul class="hidden md:flex space-x-8 font-medium">
-                <li><a href="#home" class="hover:text-yellow-400 transition">Beranda</a></li>
-                <li><a href="#produk" class="hover:text-yellow-400 transition">Produk</a></li>
-                <li><a href="#tentang" class="hover:text-yellow-400 transition">Tentang</a></li>
-                <li><a href="#kontak" class="hover:text-yellow-400 transition">Kontak</a></li>
+                <li><a href="#home" class="transition hover:[color:#A3865F]">Beranda</a></li>
+                <li><a href="#produk" class="transition hover:[color:#A3865F]">Produk</a></li>
+                <li><a href="#tentang" class="transition hover:[color:#A3865F]">Tentang</a></li>
+                <li><a href="#kontak" class="transition hover:[color:#A3865F]">Kontak</a></li>
             </ul>
 
             <!-- Mobile Menu Button -->
@@ -47,10 +47,10 @@
 
         <!-- Mobile Menu -->
         <div class="hidden md:hidden px-6 pb-4 space-y-2 bg-black/70" id="mobile-menu">
-            <a href="#home" class="block py-2 hover:text-yellow-400">Beranda</a>
-            <a href="#produk" class="block py-2 hover:text-yellow-400">Produk</a>
-            <a href="#tentang" class="block py-2 hover:text-yellow-400">Tentang</a>
-            <a href="#kontak" class="block py-2 hover:text-yellow-400">Kontak</a>
+            <a href="#home" class="block py-2 transition hover:[color:#A3865F]">Beranda</a>
+            <a href="#produk" class="block py-2 transition hover:[color:#A3865F]">Produk</a>
+            <a href="#tentang" class="block py-2 transition hover:[color:#A3865F]">Tentang</a>
+            <a href="#kontak" class="block py-2 transition hover:[color:#A3865F]">Kontak</a>
         </div>
     </nav>
 
@@ -82,8 +82,8 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init({
-        duration: 1000, // lama animasi
-        once: true,     // animasi hanya sekali
+        duration: 1000,
+        once: true,
     });
     </script>
 
