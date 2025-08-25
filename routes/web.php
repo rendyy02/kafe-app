@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/booking', [PageController::class, 'booking'])->name('booking');

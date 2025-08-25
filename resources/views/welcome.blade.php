@@ -45,7 +45,7 @@
   {{-- Booking Button + Maskot --}}
   <section>
     <div id="booking" class="mt-10 flex flex-col sm:flex-row items-center gap-4 justify-center px-4 sm:px-0">
-      <a href="#kontak" 
+      <a href="{{ route('booking') }}" 
          class="inline-block bg-[#BFA17E] hover:[background-color:#9C7B5E] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-md transition"
          data-aos="fade-right">
         Lihat daftar booking
