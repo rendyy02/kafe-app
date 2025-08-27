@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreProdukRequest;
-use App\Http\Requests\UpdateProdukRequest;
+use Illuminate\Http\Request;
 use App\Models\Produk;
 
 class ProdukController extends Controller
@@ -19,7 +18,7 @@ class ProdukController extends Controller
         return view('produk.create');
     }
 
-    public function store(StoreProdukRequest $request)
+    public function store(Request $request)
     {
         Produk::create($request->validated());
         return redirect()->route('produk.index');
@@ -30,7 +29,7 @@ class ProdukController extends Controller
         return view('produk.edit', compact('produk'));
     }
 
-    public function update(UpdateProdukRequest $request, Produk $produk)
+    public function update(Request $request, Produk $produk)
     {
         $produk->update($request->validated());
         return redirect()->route('produk.index');
