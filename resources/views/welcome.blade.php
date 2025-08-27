@@ -42,10 +42,36 @@
     </div>
   </section>
 
+  {{-- Produk Menu --}}
+  <section id="produk" class="py-16 bg-gray-200 text-center px-4 sm:px-6 md:px-24">
+    <h2 class="text-3xl font-semibold mb-10 text-gray-800" data-aos="fade-up">Menu Kami</h2>
+
+    <div class="bg-[#4B3621] rounded-xl shadow-lg p-6 text-left max-w-3xl mx-auto" data-aos="fade-up">
+      <h3 class="text-xl font-bold mb-6 text-white">Daftar Produk</h3>
+
+      <ul class="divide-y divide-gray-300">
+        @foreach($products as $product)
+          <li class="py-4 flex items-center justify-between text-white">
+            <div class="flex items-center gap-4">
+              <img src="{{ $product->image }}" 
+                  alt="{{ $product->name }}" 
+                  class="w-16 h-16 object-cover rounded-md">
+              <div>
+                <p class="font-semibold">{{ $product->name }}</p>
+                <p class="text-gray-200 text-sm">Rp {{ number_format($product->price, 0, ',', '.') }}</p>
+              </div>
+            </div>
+            <span class="text-sm text-gray-300">ID: {{ $product->id }}</span>
+          </li>
+        @endforeach
+      </ul>
+    </div>
+  </section>
+
   {{-- Booking Button + Maskot --}}
   <section>
     <div id="booking" class="mt-10 flex flex-col sm:flex-row items-center gap-4 justify-center px-4 sm:px-0">
-      <a href="{{ route('booking') }}" 
+      <a href="{{ route('booking.landing') }}" 
          class="inline-block bg-[#BFA17E] hover:[background-color:#9C7B5E] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-md transition"
          data-aos="fade-right">
         Lihat daftar booking

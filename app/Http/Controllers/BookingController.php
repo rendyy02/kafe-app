@@ -7,10 +7,10 @@ use App\Models\Booking;
 
 class BookingController extends Controller
 {
-    public function index()
+    public function landing()
     {
-        $bookings = Booking::paginate(10);
-        return view('booking.index', compact('bookings'));
+        $bookings = Booking::all();
+        return view('booking', compact('bookings'));
     }
 
     //proses
