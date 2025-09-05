@@ -10,8 +10,13 @@ class BookingController extends Controller
     public function landing()
     {
         $bookings = Booking::all();
-        return view('booking', compact('bookings'));
+        return view('customer.booking', compact('bookings'));
     }
 
-    //proses
+    // untuk admin
+    public function index()
+    {
+        $bookings = Booking::with('meja')->paginate(10);
+        return view('admin.booking.index', compact('bookings'));
+    }
 }

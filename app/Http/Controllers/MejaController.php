@@ -10,7 +10,7 @@ class MejaController extends Controller
     public function index()
     {
         $mejas = Meja::paginate(10);
-        return view('meja.index', compact('mejas'));
+        return view('admin.meja.index', compact('mejas'));
     }
 
     public function create()

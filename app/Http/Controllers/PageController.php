@@ -9,6 +9,6 @@ class PageController extends Controller
 {
     public function index(){
         $products = Produk::all();
-        return view('welcome', compact('products'));
+        return view('customer.welcome', compact('products'));
     }
 }
